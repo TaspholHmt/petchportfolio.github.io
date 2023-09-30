@@ -4,42 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Prompt&family=Roboto&display=swap');
-        
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 75%;
-            height: auto;
-        }
-
-        * {
-            font-family: 'Prompt', sans-serif;}
-
-        .descr {
-            text-align: center;
-            padding: auto;
-            background-color: bisque;
-            margin-bottom: 1%;
-        }
-
-    </style>
 </head>
 <body>
-    <h1>Certificated</h1>
-    <h2>Compettitions</h2>
-    <img src="../certificate/klix_python.png" alt="klixpython" >
-    <div class="descr">ผ่านการอบภาษา PYTHON<br>KLIX </div>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="dropdown">
+        <a href="#" class="logo">My logo</a>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="#About">About_PETCH</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Projects <b>▼</b></a>
+                    <ul>
+                        <li><a href="#">SmushHomeIoT</a></li>
+                        <li><a href="#">SAmaranthFarmIoT</a></li>
+                        <li><a href="#">Product3</a></li>
+                      </ul>
+                </li>
+                <li><a href="#Certificate">Certificate</a></li>
+                <li><a href="#">Activities<b>▼</b></a>
+                    <ul>
+                        <li><a href="#">Product1</a></li>
+                        <li><a href="#">Product2</a></li>
+                        <li><a href="#">Product3</a></li>
+                      </ul>
+                </li>
 
-    <img src="../certificate/sutCAMP.jpg" alt="sutCAMP">
-    <div class="descr">ผ่านการเข้าค่ายวิทยาศาสตร์</div>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <img src="../certificate/racCIRCUIT.jpg" alt="racCIRCUIT" >
-    <div class="descr">ผ่านการเรียนในหัวข้อ Engineering Circuit Analysis<br>Robotis Ai and Coding(RAC)<br><B>FIBO KMUTT</B></div>
 
-    <img src="../certificate/racPLC.jpg" alt="racCIRCUIT" >
-    <div class="descr">ผ่านการเรียนในหัวข้อ Robotic Automation Systems(PLC)<br>Robotis Ai and Coding(RAC)<br><B>FIBO KMUTT</B></div>
+    <section id="About_PETCH">
+        <h1 class="topic">About_PETCH</h1>
+    </section>
+
+    <section id="Education">
+
+    </section>
+    <section id="Certificate">
+        <h1 >Certificate</h1>
+        <h2>Compettitions</h2>
+        <img src="certificate/klix_python.png" alt="klixpython" >
+        <div class="descr">ผ่านการอบภาษา PYTHON<br>KLIX </div>
+    
+        <img src="certificate/sutCAMP.jpg" alt="sutCAMP">
+        <div class="descr">ผ่านการเข้าค่ายวิทยาศาสตร์</div>
+    
+        <img src="certificate/racCIRCUIT.jpg" alt="racCIRCUIT" >
+        <div class="descr">ผ่านการเรียนในหัวข้อ Engineering Circuit Analysis<br>Robotis Ai and Coding(RAC)<br><B>FIBO KMUTT</B></div>
+    
+        <img src="certificate/racPLC.jpg" alt="racCIRCUIT" >
+        <div class="descr">ผ่านการเรียนในหัวข้อ Robotic Automation Systems(PLC)<br>Robotis Ai and Coding(RAC)<br><B>FIBO KMUTT</B></div>
+    </section>
+
+    <script>
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+        document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetSection.offsetTop,
+            behavior: 'smooth'
+        });
+    });
+});
+    </script>
 </body>
 </html>
