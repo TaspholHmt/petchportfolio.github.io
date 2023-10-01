@@ -199,7 +199,7 @@ p.descr2{
     max-width: 100%;
     max-height: auto;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     text-align: center;
     display: flex;
     /* justify-content: ; */
