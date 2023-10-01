@@ -156,8 +156,8 @@ section#About_PETCH{
 
 .topic{
     margin-left: 10px;
-    font-size: 2em;
-    font-family: 'Mitr', sans-serif;;
+    font-size: 2rem;
+    font-family: 'Mitr', sans-serif;
 }
 
 .container{
@@ -169,10 +169,9 @@ section#About_PETCH{
     display: flex;
     justify-content: left;
     align-items:end
-
 }
 
-img {
+img{
     display: flex;
     max-width: 50%;
     height: auto;
@@ -193,4 +192,33 @@ p.descr2{
     font-size: 0.85rem;
     background-color: #6A7B7C;
     color: white;
+}
+
+.containerEDU{
+    /* padding-top: 5px; */
+    max-width: 70%;
+    max-height: auto;
+    margin: 0 auto;
+    border: 1px solid red;
+    text-align: center;
+    display: flex;
+    justify-content: left;
+    align-items:center;
+}
+
+img#logo1{
+    display: flex;
+    width: 30%;
+    height: auto;
+    float:left;
+    border: 1px solid red;
+}
+
+img#logo2{
+    margin-left: 5% ;
+    display: flex;
+    width: 20%;
+    float:left;
+    /* padding-right: ; */
+    border: 1px solid red;
 }

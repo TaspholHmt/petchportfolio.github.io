@@ -21,7 +21,7 @@
         <nav>
             <ul>
                 <li><a href="#About">About_PETCH</a></li>
-                <li><a href="#">Education</a></li>
+                <li><a href="#Education">Education</a></li>
                 <li><a href="#">Projects <b>▼</b></a>
                     <ul>
                         <li><a href="#">SmushHomeIoT</a></li>
@@ -48,7 +48,17 @@
     </section>
 
     <section id="Education">
-
+        <h1 class="topic">Education</h1>
+        <h3>ประวัติการศึกษา</h3>
+        <div class="containerEDU">
+            <img id="logo1" src="pics/amatinlogo.png" alt="amarinlogo">
+            <p>สำเร็จการศึกษาชั้นประถมศึกษา
+            </p>
+        </div>
+        <div class="containerEDU">
+            <img id="logo2" src="pics/yblogo.png" alt="yblogo">
+            <p></p>
+        </div>
     </section>
     <section id="Certificate">
         <h1 class="topic">Certificate</h1>
@@ -95,30 +105,56 @@
         </div>
         <div class="container">
             <img src="certificate/sutCAMP.jpg" alt="sutCAMP">
-            <p class="descr2">เข้าร่วมค่ายวิชาการด้านวิทยาศาสตร์
+            <p class="descr1">เข้าร่วมค่ายวิชาการด้านวิทยาศาสตร์
                 <br><b>มหาวิทบาลัยเทคโนโลยีสุรนารี </b></p>
+        </div>
+        <div class="container">
+            <img src="certificate/muSTEM.jpg" alt="muSTEM">
+            <p class="descr2">เข้าร่วมกิจกรรมเชิงปฏิบัติการ “STEM DAY for Health Science”
+                <br><b>คณะวิทยาศาสตร์ มหาวิทยาลัยมหิดล</b></p>
         </div>
     </section>
 
     <script>
-        let menuToggle = document.querySelector('.menuToggle');
-        let header = document.querySelector('header');
-        menuToggle.onclick = function(){
-            header.classList.toggle('active');
-        }
-        document.querySelectorAll('nav a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
+//         let menuToggle = document.querySelector('.menuToggle');
+//         let header = document.querySelector('header');
+//         menuToggle.onclick = function(){
+//             header.classList.toggle('active');
+//         }
+//         document.querySelectorAll('nav a').forEach(anchor => {
+//     anchor.addEventListener('click', function(e) {
+//         e.preventDefault();
 
-        const targetId = this.getAttribute('href').substring(1);
-        const targetSection = document.getElementById(targetId);
+//         const targetId = this.getAttribute('href').substring(1);
+//         const targetSection = document.getElementById(targetId);
 
-        window.scrollTo({
-            top: targetSection.offsetTop,
-            behavior: 'smooth'
+//         window.scrollTo({
+//             top: targetSection.offsetTop,
+//             behavior: 'smooth'
+//         });
+//     });
+// });
+// เพิ่มตัวแปรเพื่อเก็บอ้างอิงไปยัง dropdown และ menuToggle
+let menuToggle = document.querySelector('.menuToggle');
+let header = document.querySelector('header');
+let dropdowns = document.querySelectorAll('ul');
+
+// ให้หน้าจอคลิก
+window.addEventListener('click', function(e) {
+    // ตรวจสอบว่าคลิกอยู่นอกขอบเขตของ dropdowns และ menuToggle
+    if (!menuToggle.contains(e.target) && !header.contains(e.target)) {
+        // ปิด dropdowns
+        dropdowns.forEach(dropdown => {
+            dropdown.style.display = 'none';
         });
-    });
+    }
 });
+
+// เพิ่มอีเวนต์คลิกเมื่อคลิกที่ menuToggle
+menuToggle.onclick = function() {
+    header.classList.toggle('active');
+}
+
     </script>
 </body>
 </html>
