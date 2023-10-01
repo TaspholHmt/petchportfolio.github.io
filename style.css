@@ -196,13 +196,13 @@ p.descr2{
 
 .containerEDU{
     /* padding-top: 5px; */
-    max-width: 70%;
+    max-width: 100%;
     max-height: auto;
     margin: 0 auto;
     border: 1px solid red;
     text-align: center;
     display: flex;
-    justify-content: left;
+    /* justify-content: ; */
     align-items:center;
 }
 
@@ -211,45 +211,54 @@ img#logo1{
     width: 40%;
     height: auto;
     float:left;
-    /* border: 1px solid red; */
+    padding: 1rem;
+    border: 0.5em solid #E36968;
+    border-radius: 25%;
 }
 
 img#logo2{
-    margin-left: 5% ;
     display: flex;
-    width: 30%;
+    width: 40%;
     float:left;
-    /* padding-right: ; */
-    /* border: 1px solid red; */
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: 0.5em solid #E24445;
+    border-radius: 25%;
+}
+
+img#logo3{
+    display: flex;
+    width: 40%;
+    float:left;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    border: 0.5em solid #C20A14;
+    border-radius: 25%;
 }
 
 #descrEDU1{
+    font-size: 1.2em;
     background-color: #E36968;
-    padding: 0.5rem;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+    padding: 0.8rem;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    color: white;
+    color: #fff;
 }
 
 #descrEDU2{
     background-color: #E24445;
     padding: 0.5rem;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    color: white;
-    /* margin-left: 2%; */
+    color: #fff;
+    font-size: 1.2em;
 }
 
 #descrEDU3{
     background-color: #C20A14;
     padding: 0.5rem;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-    color: white;
+    color: #fff;
+    font-size: 1.2em;
 }
