@@ -188,8 +188,8 @@ p.descr1{
 
 p.descr2{
     width: 50%;
-    padding: 0.65rem;
-    font-size: 0.85rem;
+    padding: 0.6rem;
+    font-size: 0.8rem;
     background-color: #6A7B7C;
     color: white;
 }
@@ -208,17 +208,48 @@ p.descr2{
 
 img#logo1{
     display: flex;
-    width: 30%;
+    width: 40%;
     height: auto;
     float:left;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 img#logo2{
     margin-left: 5% ;
     display: flex;
-    width: 20%;
+    width: 30%;
     float:left;
     /* padding-right: ; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
+}
+
+#descrEDU1{
+    background-color: #E36968;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+}
+
+#descrEDU2{
+    background-color: #E24445;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
+    /* margin-left: 2%; */
+}
+
+#descrEDU3{
+    background-color: #C20A14;
+    padding: 0.5rem;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: white;
 }
