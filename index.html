@@ -4,14 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasphol_Yothin_Portfolio</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -48,6 +40,9 @@
     <section id="containerAbout">
         <h1 class="topic">About_PETCH</h1>
         <img src="pics/profile1.jpg" alt="profile1" id="profile1">
+        <h3 id="name">นายทัศน์พล เหมมั่น<br>Tasphol Hemmant</h3>
+        <h3>ความสามารถ (skills)</h3>
+        <p></p>
     </section>
 
     <section id="Education">
@@ -71,53 +66,53 @@
     
     <section id="Certificate">
         <h1 class="topic">Certificate</h1>
-        <div class="container">
+        <div class="box">
             <img src="certificate/klix_python.png" alt="klixpython" class="cer">
             <p class="descr1">ผ่านการอบรม “Python Programming”<br><b>KLIX online [ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ]</b> </p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/kmitlNNOEXPO.jpg" alt="kmitlNNOEXPO" class="cer">
             <p class="descr2">เข้าร่วมกิจกรรม “KMITL Innovation Expo 2023”
                 <br><b>[ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ]</b> </p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/IRAP_kmutnb.jpg" alt="IRAP_kmutnb" class="cer">
             <p class="descr1">เข้าร่วมโครงงการอบรบก้าวแรกสู่โลกของหุ่นยนต์ “หุ่นยนต์ประเภทล้อ”<br><b>[ IRAP KMUTNB ]</b> </p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/racINTRO.jpg" alt="racINTRO" class="cer">
             <p class="descr2">ผ่านการอบรมหัวข้อ “Introduction to Robotics”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/racCIRCUIT.jpg" alt="racCircuit" class="cer">
             <p class="descr1">ผ่านการอบรมหัวข้อ “Engineering Circuit Analysis”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/actuatorRAC.jpg" alt="racACTUATOR" class="cer">
             <p class="descr2">ผ่านการอบรมหัวข้อ “Basic Actuator in Robotics”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/racPLC.jpg" alt="racPLC" class="cer">
             <p class="descr1">ผ่านการอบรมหัวข้อ “Robotics Automation System(PLC)”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/racONSHAPE.jpg" alt="racONSHAPE" class="cer">
             <p class="descr2">ผ่านการอบรมหัวข้อ “3D Design with Onshape”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/racIOT.jpg" alt="racIOT" class="cer">
             <p class="descr1">ผ่านการอบรมหัวข้อ “Internet of Things Applications”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/racMQTT.jpg" alt="racMQTT" class="cer">
             <p class="descr2">ผ่านการอบรมหัวข้อ “MQTT for Beginner”<br><b>RAC [ Fibo KMUTT x KMUTNB ]</b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/sutCAMP.jpg" alt="sutCAMP" class="cer">
             <p class="descr1">เข้าร่วมค่ายวิชาการด้านวิทยาศาสตร์
                 <br><b>มหาวิทบาลัยเทคโนโลยีสุรนารี </b></p>
         </div>
-        <div class="container">
+        <div class="box">
             <img src="certificate/muSTEM.jpg" alt="muSTEM" class="cer">
             <p class="descr2">เข้าร่วมกิจกรรมเชิงปฏิบัติการ “STEM DAY for Health Science”
                 <br><b>คณะวิทยาศาสตร์ มหาวิทยาลัยมหิดล</b></p>
@@ -125,8 +120,8 @@
     </section>
 
     <footer>
-        <div id="container">
-            
+        <div id="containerContact">
+            <h2 id="contact">Contact</h2>
         </div>
     </footer>
     <script>
@@ -148,21 +143,6 @@
         });
     });
 });
-// เพิ่มตัวแปรเพื่อเก็บอ้างอิงไปยัง dropdown และ menuToggle
-// let menuToggle = document.querySelector('.menuToggle');
-// let header = document.querySelector('header');
-// let dropdowns = document.querySelectorAll('ul');
-
-// // ให้หน้าจอคลิก
-// window.addEventListener('click', function(e) {
-//     // ตรวจสอบว่าคลิกอยู่นอกขอบเขตของ dropdowns และ menuToggle
-//     if (!menuToggle.contains(e.target) && !header.contains(e.target)) {
-//         // ปิด dropdowns
-//         dropdowns.forEach(dropdown => {
-//             dropdown.style.display = 'none';
-//         });
-//     }
-// });
 
 // เพิ่มอีเวนต์คลิกเมื่อคลิกที่ menuToggle
 menuToggle.onclick = function() {
