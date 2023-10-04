@@ -171,7 +171,7 @@ section#About_PETCH{
     align-items:end
 }
 
-img{
+img.cer{
     display: flex;
     max-width: 50%;
     height: auto;
@@ -180,26 +180,26 @@ img{
 
 p.descr1{
     width: 50%;
-    padding: 0.65rem;
-    font-size: 0.85rem;
+    padding: 0.5rem;
+    font-size: 90%;
     background-color: #C30A14;
     color: white;
 }
 
 p.descr2{
     width: 50%;
-    padding: 0.6rem;
-    font-size: 0.8rem;
+    padding: 0.5rem;
+    font-size: 90%;
     background-color: #6A7B7C;
     color: white;
 }
 
 .containerEDU{
     /* padding-top: 5px; */
-    max-width: 100%;
+    width: 100%;
     max-height: auto;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 2%;
     text-align: center;
     display: flex;
@@ -254,4 +254,30 @@ img#logo3{
     padding: 0.5rem;
     color: #fff;
     font-size: 1.2em;
+}
+
+#containerAbout{
+    border: 1px solid blue;
+}
+
+#profile1{
+    border-radius: 50%;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border:6px solid #C30A14;
+    padding: 0.5rem;
+}
+
+#blank{
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+}
+
+footer.container{
+    background-color: #E14444;
+    width: 100px;
+    height: 200px;
 }
