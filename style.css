@@ -160,8 +160,8 @@ section#About_PETCH{
     font-family: 'Mitr', sans-serif;
 }
 
-.container{
-    padding-top: 5px;
+.box{
+    padding-bottom: 5px;
     max-width: 100%;
     margin: 0 auto;
     /* border: 1px solid red; */
@@ -257,7 +257,7 @@ img#logo3{
 }
 
 #containerAbout{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 
 #profile1{
@@ -276,8 +276,18 @@ img#logo3{
     height: 90px;
 }
 
-footer.container{
-    background-color: #E14444;
-    width: 100px;
-    height: 200px;
+footer {
+    text-align: center;
+    padding: 3px;
+    max-width: 100%;
+    background-color: DarkSalmon;
+    color: white;
+  }
+
+#name{
+    display: flex;
+    /* border: 1px solid red; */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
 }
